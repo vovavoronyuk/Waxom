@@ -724,4 +724,44 @@
 .project .project-box:hover .project-text p {
   color: #c7b299;
 }
+
+.bts-load {
+  margin: auto;
+}
+
+.bts-load button {
+  position: relative;
+  font-weight: 600;
+  height: 40px;
+  padding: 12px 20px;
+  outline: none;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+}
+
+.bts-load button:hover {
+  color: white;
+}
+
+.bts-load button:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 7px;
+  left: 7px;
+  height: 100%;
+  background-color: #988574;
+  z-index: -1;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  border-radius: inherit;
+}
+
+.bts-load button:hover:after {
+  top: 0px;
+  left: 0px;
+}
 /*# sourceMappingURL=style.css.map */
