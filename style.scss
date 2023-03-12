@@ -767,15 +767,18 @@ button {
         0% {
           transform: rotate(0);
           background: conic-gradient(black, transparent 20%);
+          opacity: 0.5;
         }
 
         80% {
           background: conic-gradient(black, transparent 90%);
+          opacity: 0.5;
         }
 
         100% {
           transform: rotate(360deg);
           background: conic-gradient(black, black);
+          opacity: 0.5;
         }
       }
 
@@ -843,4 +846,190 @@ button {
           width: 35%;
         }
       }
+}
+// ---------------------------------------------excellent-------------------------------------------------
+
+.excellent{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    height: 700px;
+    .excellent-img{
+        img{
+            margin: 84px 154px;
+            position: absolute;
+        }
+        
+    }
+    .excellent-text{
+        display: grid;
+        grid-template-rows:1fr 1fr ;
+        .text-imp{
+            margin: 145px 0 0 0;
+            h1{
+                color: #555555;
+                font-size: 30px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                margin-bottom: 40px;
+            }
+            p{
+                color: #8c8c8c;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 1.5;
+                letter-spacing: 0.7px;
+               
+            }
+        }
+        .text-n{
+            
+                margin: 0 0 0 50px;
+                p{
+                    color: #8c8c8c;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+                margin: 0 0 20px 0;
+                }
+                span{
+                    color: #c7b299;
+                    margin-right:30px;
+                }
+        }
+    }
+}
+// ----------------------------------------------counters-------------------------------------
+
+.counters{
+    height: 300px;
+    background-color: #35261f;
+    .coun-log{
+        position: absolute;
+        margin: 70px 0 0 400px;
+        text-align: center;
+        a{
+         
+            color: #817060;
+            zoom: 2;
+        }
+        h1{
+            color: white;
+            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            margin: 30px 0 20px 0;
+        }
+        p{
+            color: #c7b299;
+            font-size: 16px;
+            margin: 0 0 30px 0;
+        }
+        span{
+            display: inline-flex;
+            width: 30px;
+            border: 2px solid white;
+        }
+    }
+    .coun-cup{
+        position: absolute;
+        margin: 70px 0 0 540px;
+        text-align: center;
+        a{
+         
+            color: #817060;
+            zoom: 2;
+        }
+        h1{
+            color: white;
+            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            margin: 30px 0 20px 0;
+        }
+        p{
+            color: #c7b299;
+            font-size: 16px;
+            margin: 0 0 30px 0;
+        }
+        span{
+            display: inline-flex;
+            width: 30px;
+            border: 2px solid white;
+        }
+    }
+    .coun-blog{
+        position: absolute;
+        margin: 70px 0 0 670px;
+        text-align: center;
+        a{
+         
+            color: #817060;
+            zoom: 2;
+        }
+        h1{
+            color: white;
+            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            margin: 30px 0 20px 0;
+        }
+        p{
+            color: #c7b299;
+            font-size: 16px;
+            margin: 0 0 30px 0;
+        }
+        span{
+            display: inline-flex;
+            width: 30px;
+            border: 2px solid white;
+        }
+    }
+    .coun-like{
+        position: absolute;
+        margin: 70px 0 0 810px;
+        text-align: center;
+        a{
+         
+            color: #817060;
+            zoom: 2;
+        }
+        h1{
+            color: white;
+            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            margin: 30px 0 20px 0;
+        }
+        p{
+            color: #c7b299;
+            font-size: 16px;
+            margin: 0 0 30px 0;
+        }
+        span{
+            display: inline-flex;
+            width: 30px;
+            border: 2px solid white;
+        }
+    }
+    .coun-we{
+        position: absolute;
+        margin: 70px 0 0 930px;
+        text-align: center;
+        a{
+         
+            color: #817060;
+            zoom: 2;
+        }
+        h1{
+            color: white;
+            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            margin: 30px 0 20px 0;
+        }
+        p{
+            color: #c7b299;
+            font-size: 16px;
+            margin: 0 0 30px 0;
+        }
+        span{
+            display: inline-flex;
+            width: 30px;
+            border: 2px solid white;
+        }
+    }
 }
