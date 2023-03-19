@@ -1226,9 +1226,20 @@
   letter-spacing: 0.7px;
 }
 
+.recent-posts .recent-box {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 0 0 70px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
 .recent-posts .recent-box .slider-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 220px 175px;
+      grid-template-rows: 220px 175px;
   width: 370px;
-  height: 395px;
 }
 
 .recent-posts .recent-box .slider-box .img-box img {
@@ -1237,6 +1248,7 @@
 }
 
 .recent-posts .recent-box .slider-box .img-box .day {
+  margin: 20px 0 0 20px;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
@@ -1246,5 +1258,111 @@
   position: absolute;
   text-align: center;
   padding: 5px;
+}
+
+.recent-posts .recent-box .slider-box .img-box .months {
+  margin: 55px 0 0 20px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  width: 50px;
+  height: 25px;
+  background-color: #242424;
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+}
+
+.recent-posts .recent-box .slider-box .text-box {
+  background-color: white;
+  border: 1px solid #f7f7f7;
+  width: 370px;
+}
+
+.recent-posts .recent-box .slider-box .text-box h1 {
+  color: #555555;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  margin: 30px 0 20px 30px;
+}
+
+.recent-posts .recent-box .slider-box .text-box p {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 27px 30px;
+  line-height: 1.4;
+}
+
+.recent-posts .recent-box .slider-box .text-box .cta {
+  margin: 0 0 0 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.recent-posts .recent-box .slider-box .text-box .cta span {
+  padding-bottom: 7px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.recent-posts .recent-box .slider-box .text-box .hover-underline-animation {
+  position: relative;
+  color: #c7b199;
+  padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.recent-posts .recent-box .slider-box .text-box .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c7b199;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.recent-posts .recent-box .slider-box .text-box .cta:hover .hover-underline-animation:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.slider-box:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.recent-posts .recent-box .slider-box:hover .text-box {
+  background-color: #352f2d;
+}
+
+.recent-posts .recent-box .slider-box:hover .text-box h1 {
+  color: #7e7063;
+}
+
+.recent-posts .recent-box .slider-box:hover .text-box p {
+  color: white;
+}
+
+.recent-posts .recent-box .slider-box:hover .img-box .day {
+  background-color: #c7b199;
+}
+
+.recent-posts .recent-box .slider-box:hover .img-box .months {
+  background-color: #a48d71;
 }
 /*# sourceMappingURL=style.css.map */
