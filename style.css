@@ -1365,4 +1365,14 @@
 .recent-posts .recent-box .slider-box:hover .img-box .months {
   background-color: #a48d71;
 }
+
+.partners .img-part {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 90px;
+  margin: 170px;
+}
 /*# sourceMappingURL=style.css.map */

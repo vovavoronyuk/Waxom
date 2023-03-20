@@ -1199,4 +1199,12 @@ button {
 
 .partners{
     
+   .img-part{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 90px;
+    margin: 170px;
+    
+}
 }
