@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+main {
+  padding: 0 0 490px 0;
+}
+
 .header {
   width: 100%;
   height: 1000px;
@@ -1350,6 +1354,7 @@
 
 .recent-posts .recent-box .slider-box:hover .text-box {
   background-color: #352f2d;
+  border: none;
 }
 
 .recent-posts .recent-box .slider-box:hover .text-box h1 {
@@ -1376,5 +1381,253 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 90px;
   margin: 170px;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 510px 111px;
+      grid-template-rows: 510px 111px;
+}
+
+.footer .about {
+  background-color: #191919;
+  height: 510px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 262px 262px 262px 262px;
+      grid-template-columns: 262px 262px 262px 262px;
+  gap: 43px;
+  padding: 0 136px;
+}
+
+.footer .about-waxom {
+  height: 350px;
+}
+
+.footer .about-waxom .about-logo {
+  margin: 80px 0 30px 0;
+}
+
+.footer .about-waxom .about-logo img {
+  position: relative;
+  cursor: pointer;
+}
+
+.footer .about-waxom .about-logo h1 {
+  font-size: 34px;
+  font-family: 'Raleway', sans-serif;
+  margin: -46px 0 0 73px;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+}
+
+.footer .about-waxom p {
+  color: #555555;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 33px 0;
+  line-height: 1.5;
+}
+
+.footer .about-waxom .cta-btc {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.footer .about-waxom .cta-btc span {
+  padding-bottom: 7px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.footer .about-waxom .hover-underline-animation {
+  position: relative;
+  color: white;
+  padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer .about-waxom .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.footer .about-waxom .cta-btc:hover .hover-underline-animation:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.footer .posts-waxom {
+  margin: 105px 0 30px 0;
+}
+
+.footer .posts-waxom h1 {
+  color: white;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 0 33px 0;
+  font-weight: 600;
+}
+
+.footer .posts-waxom div .sep {
+  color: #363636;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 11px 0;
+}
+
+.footer .posts-waxom div .text {
+  color: #555555;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+
+.footer .posts-waxom div span {
+  border: 1px solid #242424;
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.footer .posts-waxom div .sep-col {
+  color: white;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 11px 0;
+}
+
+.footer .posts-waxom div .text-col {
+  color: #998977;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+
+.footer .our-twitter {
+  margin: 105px 0 30px 0;
+}
+
+.footer .our-twitter h1 {
+  color: white;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 0 30px 0;
+  font-weight: 600;
+}
+
+.footer .our-twitter .twit-text {
+  color: #555555;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3;
+  margin: 0 0 11px 0;
+}
+
+.footer .our-twitter .waxom {
+  color: #00bff3;
+  cursor: pointer;
+}
+
+.footer .our-twitter .time {
+  color: #363636;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer .our-twitter .line {
+  border: 1px solid #242424;
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.footer .our-twitter .bit {
+  color: #959595;
+  cursor: pointer;
+}
+
+.footer .widget {
+  margin: 105px 0 30px 0;
+}
+
+.footer .widget h1 {
+  color: white;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 0 30px 0;
+  font-weight: 600;
+}
+
+.footer .widget div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+}
+
+.footer .widget div img {
+  width: 130px;
+  height: 100px;
+}
+
+.footer .copyright {
+  background-color: #101010;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.footer .copyright .left {
+  margin: 45px 0 0 140px;
+  font-size: 13px;
+  color: #555555;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer .copyright .left span {
+  color: #959595;
+  cursor: pointer;
+}
+
+.footer .copyright .left a {
+  color: #c7b299;
+  cursor: pointer;
+}
+
+.footer .copyright .right {
+  margin: 45px 0 0 280px;
+  font-size: 13px;
+  color: #555555;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer .copyright .right span {
+  color: #959595;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
